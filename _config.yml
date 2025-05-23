@@ -30,7 +30,7 @@ twitter_username: eh
 github_username:  junekuhn
 
 # Build settings
-theme: tactile
+theme: minima
 plugins:
 
 # Exclude from processing.
