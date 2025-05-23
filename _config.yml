@@ -18,6 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# minima theme https://github.com/jekyll/minima
+
 title: Entangled Listening
 email: j.kuhn24@imperial.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
