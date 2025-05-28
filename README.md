@@ -1,6 +1,9 @@
 # Entangled Listening
 
 
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+
+
 Concepts we’re exploring in the workshop
 Listening practices, with or without technology, can actively shape and reshape imaginations, memories, and interactions with the world.
 Working with certain audio technologies demonstrates an ambiguity between making music, exploring sound, and designing musical instruments.

@@ -1,0 +1,23 @@
+{
+  "name": "entangled-listening-nime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junekuhn/entangled-listening-nime.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junekuhn/entangled-listening-nime/issues"
+  },
+  "homepage": "https://github.com/junekuhn/entangled-listening-nime#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  }
+}
