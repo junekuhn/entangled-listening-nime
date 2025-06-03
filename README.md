@@ -16,3 +16,12 @@ Bibliography
 
 Research is supported by a UKRI Frontier Research (Consolidator) grant EP/X023478/1 (RUDIMENTS) and by the Royal Academy of Engineering under the Research Chairs and Senior Research Fellowships scheme.
 
+
+todo
+- css flexbox for cards
+- content for cards
+- background colors and styles
+- schedule
+- let's do content first
+
+

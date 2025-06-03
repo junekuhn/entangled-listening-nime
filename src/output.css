@@ -8,6 +8,8 @@
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --spacing: 0.25rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-bold: 700;
@@ -170,14 +172,53 @@
   .fixed {
     position: fixed;
   }
+  .relative {
+    position: relative;
+  }
+  .m-auto {
+    margin: auto;
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
   .contents {
     display: contents;
   }
+  .flex {
+    display: flex;
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-full {
+    max-width: 100%;
+  }
+  .basis-1\/2 {
+    flex-basis: calc(1/2 * 100%);
+  }
+  .basis-full {
+    flex-basis: 100%;
+  }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .list-disc {
+    list-style-type: disc;
+  }
+  .flex-row {
+    flex-direction: row;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -189,6 +230,12 @@
   .border-gray-400 {
     border-color: var(--color-gray-400);
   }
+  .object-cover {
+    object-fit: cover;
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
@@ -199,9 +246,48 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .md\:basis-1\/2 {
+    @media (width >= 48rem) {
+      flex-basis: calc(1/2 * 100%);
+    }
+  }
+  .md\:basis-45 {
+    @media (width >= 48rem) {
+      flex-basis: calc(var(--spacing) * 45);
+    }
+  }
+  .md\:basis-50 {
+    @media (width >= 48rem) {
+      flex-basis: calc(var(--spacing) * 50);
+    }
+  }
+  .md\:basis-\[45\%\] {
+    @media (width >= 48rem) {
+      flex-basis: 45%;
+    }
+  }
+  .lg\:basis-1\/3 {
+    @media (width >= 64rem) {
+      flex-basis: calc(1/3 * 100%);
+    }
+  }
+  .lg\:basis-30 {
+    @media (width >= 64rem) {
+      flex-basis: calc(var(--spacing) * 30);
+    }
+  }
+  .lg\:basis-\[30\%\] {
+    @media (width >= 64rem) {
+      flex-basis: 30%;
+    }
   }
 }
 body, html {
@@ -211,6 +297,9 @@ body, html {
 }
 .header {
   margin: 10px;
+}
+td, th {
+  padding: 0.6em;
 }
 h4 {
   font-size: 18px;
@@ -222,6 +311,11 @@ h4 {
   padding-top: 4rem;
   padding-bottom: 4rem;
   font-size: 14px;
+}
+.card {
+  border: black 1px solid;
+  border-radius: 2px;
+  padding: 0.5rem;
 }
 @property --tw-border-style {
   syntax: "*";
