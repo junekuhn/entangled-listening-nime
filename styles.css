@@ -28,21 +28,73 @@ h4 {
 }
 
 .section {
-    margin: 2rem;
+    margin: 1rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     font-size: 14px;
+    box-shadow:  0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    border: black 1px solid;
+    border-radius: 1rem;
+
 }
 
 .card {
-    border: black 1px solid;
-    border-radius: 2px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
     padding: 0.5rem;
 }
 
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    max-width: 450px;
+    margin: auto;
+    min-width: 200px;
+}
+
+.card .name {
+    font-size: 20px;
+}
+
+.card .affiliation {
+
+    font-size: 14px;
+    margin-top: 0.5rem;
+}
+ 
+.card .description {
+    margin-top: 0.7rem;
+
+}
 /* iframe {
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 } */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .section {
+        width: 50%;
+        margin: 3rem auto;
+        padding: 2rem;
+        box-shadow: 0 10
+        px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) ;
+    }
+
+    table {
+        margin: auto;
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
