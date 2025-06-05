@@ -1,10 +1,18 @@
 /*! tailwindcss v4.1.7 | MIT License | https://tailwindcss.com */
 @layer properties;
+@font-face {
+  font-family: 'aeonikfono';
+  src: url('src/aeonikfono-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --spacing: 0.25rem;
@@ -232,8 +240,14 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
+  }
   .text-center {
     text-align: center;
+  }
+  .-indent-3 {
+    text-indent: calc(var(--spacing) * -3);
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -265,8 +279,10 @@ h4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-p {
+p, li {
   padding-top: 1rem;
+  font-family: 'aeonikfono';
+  font-size: 14px;
 }
 a {
   color: blue;
@@ -281,9 +297,10 @@ a {
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   border: black 1px solid;
   border-radius: 1rem;
+  background-color: #F9B4A422;
 }
 .card {
-  background-color: #f1f1f1;
+  background-color: #e8e8e899;
   border-radius: 5px;
   padding: 0.5rem;
 }
@@ -296,6 +313,7 @@ a {
   min-width: 200px;
 }
 .card .name {
+  padding-top: 0.5rem;
   font-size: 20px;
 }
 .card .affiliation {
