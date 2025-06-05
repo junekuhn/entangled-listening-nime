@@ -265,6 +265,12 @@ h4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+p {
+  padding-top: 1rem;
+}
+a {
+  color: blue;
+}
 .section {
   margin: 1rem;
   padding-top: 4rem;
@@ -304,7 +310,7 @@ h4 {
     width: 50%;
     margin: 3rem auto;
     padding: 2rem;
-    box-shadow: 0 10 px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   }
   table {
     margin: auto;
